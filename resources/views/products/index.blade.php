@@ -1,8 +1,9 @@
 <x-layout>
-    <div class="my-3 row row-cols-1 row-cols-md-2 g-4">
+    <a href="{{route('products.create')}}" class="btn btn-primary mt-1">Добавить товар</a>
+    <div class="my-2 row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
         @foreach ($products as $product)
-                <div class="card">
+                <div class="card my-1">
                     <div class="card-body">
                         <h5 class="card-title">{{$product->name}}</h5>
                         <p class="card-text">

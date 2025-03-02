@@ -5,7 +5,7 @@ use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return 'Welcome to MPFIT test project';
+    return view('home');
 });
 
 Route::resource('products', ProductController::class);
